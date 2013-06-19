@@ -10,4 +10,11 @@
 
 @interface QCViewController : UIViewController
 
+<UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
+
+- (IBAction)buttonPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *textField;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *tasks;
+
 @end
